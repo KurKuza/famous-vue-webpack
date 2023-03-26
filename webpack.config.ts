@@ -1,9 +1,8 @@
-const { VueLoaderPlugin } = require('vue-loader')
-const htmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const autoprefixer = require('autoprefixer')
-const path = require('path')
+import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import htmlWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import path from 'path'
+import { VueLoaderPlugin } from 'vue-loader'
 
 module.exports = {
 	entry: {
@@ -36,17 +35,8 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: [
-					'style-loader',
-					MiniCssExtractPlugin.loader,
-					'css-loader',
-					{
-						loader: 'postcss-loader',
-						options: {
-							plugins: () => [autoprefixer()],
-						},
-					},
-				],
+
+				use: ['style-loader', 'css-loader'],
 			},
 			{
 				test: /\.(eot|ttf|woff|woff2)(\?\S*)?$/,
@@ -77,12 +67,12 @@ module.exports = {
 	],
 	resolve: {
 		alias: {
-			vue$: 'vue/dist/vue.runtime.esm.js',
+			vue: '@vue/runtime-dom',
 		},
 		extensions: ['*', '.js', '.ts', '.vue', '.json'],
 	},
 	optimization: {
-		moduleIds: 'hashed',
+		moduleIds: 'deterministic',
 		runtimeChunk: 'single',
 		splitChunks: {
 			cacheGroups: {
@@ -97,6 +87,6 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
-		stats: 'errors-only',
 	},
+	stats: 'errors-only',
 }
