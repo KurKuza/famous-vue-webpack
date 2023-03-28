@@ -1,13 +1,13 @@
 <script setup>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-// import Products from '@/components/products/Products.vue'
+import Products from '@/components/products/Products.vue'
 </script>
 
 <template>
 	<div class="page">
 		<Header />
-		<!-- <Products /> -->
+		<Products />
 		<Footer />
 	</div>
 </template>
