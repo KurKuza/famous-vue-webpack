@@ -1,0 +1,30 @@
+<script setup>
+const { dark } = defineProps({
+	dark: Boolean,
+})
+</script>
+
+<template>
+	<a href="#">
+		<div class="logo" :class="[dark ? 'dark' : 'light']">
+			<img src="@/assets/logo-famous.svg" />
+		</div>
+	</a>
+</template>
+
+<style lang="css">
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 0.0625rem;
+}
+.light {
+	background-color: #776763;
+}
+.dark {
+	background-color: #403432;
+}
+</style>

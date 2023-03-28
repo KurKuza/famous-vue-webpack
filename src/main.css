@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500&display=swap');
+
+:root {
+	--font: Merriweather, sans-serif;
+	--textColor: #343030;
+	--headerDividerColor: #e1e1e1;
+	--bodyColor: #f6f3f3;
+	--footerColor: #eceaea;
+}
+#app {
+	font-family: var(--font);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: var(--textColor);
+	background-color: var(--bodyColor);
+	height: 100vh;
+}
+input {
+	font-family: var(--font);
+}
+a {
+	font-weight: 500;
+	color: var(--textColor);
+}
