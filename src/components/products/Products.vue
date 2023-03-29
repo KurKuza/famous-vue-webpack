@@ -2,6 +2,7 @@
 import Container from '@/components/Container.vue'
 import Title from '@/components/Title.vue'
 import Card from './Card.vue'
+import { CardsMock } from './CardsMock.ts'
 </script>
 
 <template>
@@ -9,7 +10,9 @@ import Card from './Card.vue'
 		<Container>
 			<div class="products__container">
 				<Title>Картины эпохи Возрождения</Title>
-				<Card />
+				<div class="cards">
+					<Card v-for="card in CardsMock" v-bind="card" />
+				</div>
 			</div>
 		</Container>
 	</main>
@@ -18,6 +21,11 @@ import Card from './Card.vue'
 <style lang="css">
 .products {
 	height: 100%;
+}
+.cards {
+	display: flex;
+	flex: wrap;
+	gap: 2rem;
 }
 .products__container {
 	display: flex;

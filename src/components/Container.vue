@@ -13,7 +13,7 @@ import Logo from '@/components/Logo.vue'
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 74rem;
+	width: 76rem;
 	padding: 0 1rem;
 	margin: 0 auto;
 }

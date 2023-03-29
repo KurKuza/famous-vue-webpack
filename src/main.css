@@ -3,9 +3,12 @@
 :root {
 	--font: Merriweather, sans-serif;
 	--textColor: #343030;
-	--headerDividerColor: #e1e1e1;
+	--dividerColor: #e1e1e1;
 	--bodyColor: #f6f3f3;
 	--footerColor: #eceaea;
+	--accentColor1: #403432;
+	--accentColor2: #382e2b;
+	--accentColor3: #5b3a32;
 }
 #app {
 	font-family: var(--font);

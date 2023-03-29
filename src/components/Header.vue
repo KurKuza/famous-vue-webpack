@@ -24,7 +24,7 @@ import Search from '@/components/Search.vue'
 	align-items: center;
 	width: 100%;
 	height: 5.9375rem;
-	border-bottom: 0.0625rem solid var(--headerDividerColor);
+	border-bottom: 0.0625rem solid var(--dividerColor);
 }
 .container {
 	justify-content: space-between;

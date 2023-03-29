@@ -1,9 +1,11 @@
-<script setup></script>
+<script setup>
+import Button from './Button.vue'
+</script>
 
 <template>
 	<div class="search">
 		<input placeholder="Поиск по названию картины" />
-		<button>Найти</button>
+		<Button class="button" buttonAccentColor1>Найти</Button>
 	</div>
 </template>
 
@@ -17,11 +19,7 @@ input {
 	padding: 0.8125rem 1rem 0.875rem;
 	min-width: 18.375rem;
 }
-button {
-	background-color: #403432;
-	color: #ffffff;
-	font-weight: 700;
+.button {
 	margin: -0.0625rem;
-	padding: 0.8125rem 2.25rem 0.875rem;
 }
 </style>
