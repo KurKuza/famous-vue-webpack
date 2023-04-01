@@ -6,13 +6,13 @@ const { dark } = defineProps({
 
 <template>
 	<a href="#">
-		<div class="logo" :class="[dark ? 'dark' : 'light']">
+		<div class="logo" :class="[dark ? 'logo__dark' : 'logo__light']">
 			<img src="@/assets/logo-famous.svg" />
 		</div>
 	</a>
 </template>
 
-<style lang="css">
+<style lang="scss">
 .logo {
 	display: flex;
 	justify-content: center;
@@ -20,11 +20,11 @@ const { dark } = defineProps({
 	width: 3rem;
 	height: 3rem;
 	border-radius: 0.0625rem;
-}
-.light {
-	background-color: #776763;
-}
-.dark {
-	background-color: #403432;
+	&__light {
+		background-color: #776763;
+	}
+	&__dark {
+		background-color: #403432;
+	}
 }
 </style>

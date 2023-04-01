@@ -40,7 +40,7 @@ const props = defineProps({
 	</div>
 </template>
 
-<style lang="css">
+<style lang="scss">
 .card {
 	display: flex;
 	flex-direction: column;

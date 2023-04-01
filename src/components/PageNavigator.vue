@@ -20,7 +20,7 @@ const pages = ref([
 	</nav>
 </template>
 
-<style lang="css">
+<style lang="scss">
 .pages {
 	display: flex;
 	justify-content: center;
@@ -28,10 +28,10 @@ const pages = ref([
 	flex-wrap: wrap;
 	column-gap: 3rem;
 	row-gap: 0.5rem;
-}
-.page {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	.page {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 </style>

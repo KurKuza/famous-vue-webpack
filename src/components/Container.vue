@@ -8,7 +8,7 @@ import Logo from '@/components/Logo.vue'
 	</div>
 </template>
 
-<style lang="css">
+<style lang="scss">
 .container {
 	display: flex;
 	justify-content: center;

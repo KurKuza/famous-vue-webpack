@@ -7,8 +7,8 @@ import Search from '@/components/Search.vue'
 
 <template>
 	<footer class="footer">
-		<Container class="container">
-			<div class="left">
+		<Container class="footer__container">
+			<div class="footer__left">
 				<Logo dark />
 				<PageNavigator />
 			</div>
@@ -16,7 +16,7 @@ import Search from '@/components/Search.vue'
 	</footer>
 </template>
 
-<style lang="css">
+<style lang="scss">
 .footer {
 	display: flex;
 	justify-content: space-between;
@@ -24,14 +24,14 @@ import Search from '@/components/Search.vue'
 	width: 100%;
 	height: 5.9375rem;
 	background-color: var(--footerColor);
-}
-.container {
-	justify-content: space-between;
-}
-.left {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 3rem;
+	&__container {
+		justify-content: space-between;
+	}
+	&__left {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+	}
 }
 </style>

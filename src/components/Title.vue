@@ -6,7 +6,7 @@ import Container from '@/components/Container.vue'
 	<div class="title"><slot /></div>
 </template>
 
-<style lang="css">
+<style lang="scss">
 .title {
 	font-weight: 700;
 	font-size: 1.5rem;

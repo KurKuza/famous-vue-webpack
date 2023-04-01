@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "webpack --mode production",
-		"start": "webpack-dev-server --mode development"
+		"start": "webpack-dev-server --mode development",
+		"build": "webpack --mode production"
 	},
 	"keywords": [],
 	"author": "",
@@ -28,8 +28,10 @@
 		"file-loader": "^6.1.0",
 		"html-webpack-plugin": "^5.5.0",
 		"mini-css-extract-plugin": "^2.7.5",
+		"node-sass": "^8.0.0",
 		"postcss": "^8.4.21",
 		"postcss-loader": "^7.1.0",
+		"sass-loader": "^13.2.2",
 		"style-loader": "^3.3.2",
 		"ts-loader": "^9.4.2",
 		"ts-node": "^10.9.1",
