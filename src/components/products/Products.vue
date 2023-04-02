@@ -21,15 +21,15 @@ import { CardsMock } from './CardsMock.ts'
 <style lang="scss">
 .products {
 	height: 100%;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		padding-top: 2.8125rem;
+	}
 }
 .cards {
 	display: flex;
 	flex: wrap;
 	gap: 2rem;
-}
-.products__container {
-	display: flex;
-	flex-direction: column;
-	padding-top: 2.8125rem;
 }
 </style>

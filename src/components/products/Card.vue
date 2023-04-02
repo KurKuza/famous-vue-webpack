@@ -46,38 +46,34 @@ const props = defineProps({
 	flex-direction: column;
 	border: 0.0625rem solid var(--dividerColor);
 	max-width: 278px;
-}
-.card__content {
-	padding: 1.25rem 1.5rem 1.5rem 1.5rem;
-}
-.card__img {
-	width: 100%;
-	height: 160px;
-}
-.card__name {
-	font-weight: 400;
-	font-size: 1.125rem;
-	line-height: 150%;
-	text-align: left;
-	margin-bottom: 1.375rem;
-}
-.card__bottom-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.card__bottom-content {
-	display: flex;
-	justify-content: space-between;
+	&__content {
+		padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+	}
+	&__img {
+		width: 100%;
+		height: 160px;
+	}
+	&__name {
+		font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 150%;
+		text-align: left;
+		margin-bottom: 1.375rem;
+	}
+	&__bottom-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 .price {
 	text-align: left;
-}
-.price__old {
-	color: #a0a0a0;
-	font-weight: 300;
-	font-size: 0.875rem;
-	line-height: 150%;
-	text-decoration: line-through;
+	&__old {
+		color: #a0a0a0;
+		font-weight: 300;
+		font-size: 0.875rem;
+		line-height: 150%;
+		text-decoration: line-through;
+	}
 }
 </style>
