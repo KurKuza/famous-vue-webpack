@@ -17,15 +17,23 @@ const props = defineProps({
 		type: Number || Null,
 		default: null,
 	},
+	isInTheBasket: {
+		type: Boolean,
+		default: false,
+	},
+	isBought: {
+		type: Boolean,
+		default: false,
+	},
 })
 </script>
 
 <template>
-	<div class="card">
+	<div class="card" :class="{ card__isBought: isBought }">
 		<img class="card__img" :src="props.img" alt="img" />
 		<div class="card__content">
 			<p class="card__name">{{ props.name }}</p>
-			<div class="card__bottom-content">
+			<div v-if="!isBought" class="card__bottom-content">
 				<div class="price">
 					<div class="price__old" v-if="props.oldPrice != null">
 						{{ props.oldPrice.toLocaleString('ru-RU') }}$
@@ -46,6 +54,9 @@ const props = defineProps({
 	flex-direction: column;
 	border: 0.0625rem solid var(--dividerColor);
 	max-width: 278px;
+	&__isBought {
+		opacity: 0.5;
+	}
 	&__content {
 		padding: 1.25rem 1.5rem 1.5rem 1.5rem;
 	}
