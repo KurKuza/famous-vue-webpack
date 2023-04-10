@@ -12,6 +12,7 @@ import Button from '@/components/buttons/Button.vue'
 <style lang="scss" scoped>
 .search {
 	display: flex;
+	justify-content: space-between;
 	min-width: 26rem;
 	border: 1px solid #e1e1e1;
 	input {
