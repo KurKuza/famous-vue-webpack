@@ -29,18 +29,16 @@ const props = defineProps({
 </script>
 
 <template>
-	<div class="card" :class="{ card__isBought: isBought }">
+	<div class="card" :class="{ 'card--isBought': isBought }">
 		<img class="card__img" :src="props.img" alt="img" />
 		<div class="card__content">
 			<p class="card__name">{{ props.name }}</p>
 			<div v-if="!isBought" class="card__bottom-content">
-				<div class="price">
-					<div class="price__old" v-if="props.oldPrice != null">
+				<div class="card__price">
+					<div class="card__price_old" v-if="props.oldPrice != null">
 						{{ props.oldPrice.toLocaleString('ru-RU') }}$
 					</div>
-					<div class="price__current">
-						{{ props.price.toLocaleString('ru-RU') }}$
-					</div>
+					<div>{{ props.price.toLocaleString('ru-RU') }}$</div>
 				</div>
 				<Button buttonAccentColor2>Купить</Button>
 			</div>
@@ -54,7 +52,7 @@ const props = defineProps({
 	flex-direction: column;
 	border: 0.0625rem solid var(--dividerColor);
 	max-width: 278px;
-	&__isBought {
+	&--isBought {
 		opacity: 0.5;
 	}
 	&__content {
@@ -76,15 +74,15 @@ const props = defineProps({
 		justify-content: space-between;
 		align-items: center;
 	}
-}
-.price {
-	text-align: left;
-	&__old {
-		color: #a0a0a0;
-		font-weight: 300;
-		font-size: 0.875rem;
-		line-height: 150%;
-		text-decoration: line-through;
+	.card__price {
+		text-align: left;
+		&_old {
+			color: #a0a0a0;
+			font-weight: 300;
+			font-size: 0.875rem;
+			line-height: 150%;
+			text-decoration: line-through;
+		}
 	}
 }
 </style>

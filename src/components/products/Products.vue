@@ -18,7 +18,7 @@ import { CardsMock } from './CardsMock.ts'
 	</main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .products {
 	height: 100%;
 	&__container {

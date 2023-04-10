@@ -12,7 +12,7 @@ const { dark } = defineProps({
 	</a>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .logo {
 	display: flex;
 	justify-content: center;
