@@ -1,7 +1,7 @@
 <script setup>
-import { successIcon } from '@/assets/icons'
 import Button from '@/components/buttons/Button.vue'
 import CardMessage from './CardMessage.vue'
+import CardButton from './CardButton.vue'
 const props = defineProps({
 	name: {
 		type: String,
@@ -45,10 +45,7 @@ const props = defineProps({
 					</div>
 					<div>{{ props.price.toLocaleString('ru-RU') }}$</div>
 				</div>
-				<Button v-if="isInTheBasket" buttonAccentColor3 :icon="successIcon"
-					>В корзине</Button
-				>
-				<Button v-else buttonAccentColor2>Купить</Button>
+				<CardButton :isInTheBasket="isInTheBasket" />
 			</div>
 		</div>
 	</div>
