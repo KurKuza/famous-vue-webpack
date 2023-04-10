@@ -7,7 +7,7 @@ const { dark } = defineProps({
 <template>
 	<a href="#">
 		<div class="logo" :class="[dark ? 'logo__dark' : 'logo__light']">
-			<img src="@/assets/logo-famous.svg" />
+			<img src="@/assets/icons/logo-famous.svg" />
 		</div>
 	</a>
 </template>

@@ -20,7 +20,7 @@ export const CardsMock: CardType[] = [
 		img: TheBirthofVenusbySandroBotticelli,
 		price: 1000000,
 		oldPrice: 2000000,
-		isInTheBasket: true,
+		isInTheBasket: false,
 		isBought: false,
 	},
 	{
@@ -28,7 +28,7 @@ export const CardsMock: CardType[] = [
 		img: TheLastSupperbyLeonardodaVinci,
 		price: 3000000,
 		oldPrice: null,
-		isInTheBasket: true,
+		isInTheBasket: false,
 		isBought: false,
 	},
 	{

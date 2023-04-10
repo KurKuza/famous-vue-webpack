@@ -1,5 +1,8 @@
 <script setup>
-import Button from '@/components/Button.vue'
+import { successIcon } from '@/assets/icons'
+import Button from '@/components/buttons/Button.vue'
+import IconButton from '@/components/buttons/IconButton.vue'
+import CardMessage from './CardMessage.vue'
 const props = defineProps({
 	name: {
 		type: String,
@@ -33,17 +36,20 @@ const props = defineProps({
 		<img class="card__img" :src="props.img" alt="img" />
 		<div class="card__content">
 			<p class="card__name">{{ props.name }}</p>
-			<div v-if="!isBought" class="card__bottom-content">
+			<div v-if="isBought" class="card__message">
+				<CardMessage>Продана на аукционе</CardMessage>
+			</div>
+			<div v-else class="card__bottom-content">
 				<div class="card__price">
 					<div class="card__price_old" v-if="props.oldPrice != null">
 						{{ props.oldPrice.toLocaleString('ru-RU') }}$
 					</div>
 					<div>{{ props.price.toLocaleString('ru-RU') }}$</div>
 				</div>
-				<Button buttonAccentColor2>Купить</Button>
-			</div>
-			<div v-else class="card__message">
-				<CardMessage>Продана на аукционе</CardMessage>
+				<Button v-if="isInTheBasket" buttonAccentColor3 :icon="successIcon"
+					>В корзине</Button
+				>
+				<Button v-else buttonAccentColor2>Купить</Button>
 			</div>
 		</div>
 	</div>
