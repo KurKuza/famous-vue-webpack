@@ -50,6 +50,7 @@ input::-ms-clear {
 button {
 	cursor: pointer;
 	background-color: inherit;
+	font-family: inherit;
 }
 
 button::-moz-focus-inner {

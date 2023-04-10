@@ -18,10 +18,13 @@ const props = defineProps({
 			button__accent_3: props.buttonAccentColor3,
 		}"
 	>
-		<Loader v-if="true" class="button__loader" />
+		<Loader v-if="props.loader" class="button__loader" />
 		<div v-else class="button__content">
-			<img v-if="icon" class="button__icon" :src="icon" />
-			<slot />
+			<div v-if="icon" class="button__icon-content">
+				<img class="button__icon" :src="icon" />
+				<slot />
+			</div>
+			<div v-else class="button__default"><slot /></div>
 		</div>
 	</button>
 </template>
@@ -33,12 +36,19 @@ const props = defineProps({
 	align-items: center;
 	color: #ffffff;
 	font-weight: 700;
+	font-size: 0.875rem;
 	height: 3rem;
 	width: 7rem;
 	&__content {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	&__icon-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 7.375rem;
 	}
 	&__icon {
 		margin-right: 0.25rem;
