@@ -56,7 +56,7 @@ const props = defineProps({
 	display: flex;
 	flex-direction: column;
 	border: 0.0625rem solid var(--dividerColor);
-	width: 17.375rem;
+	width: 17.25rem;
 	height: 20.5rem;
 
 	&--isBought {

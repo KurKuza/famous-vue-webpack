@@ -10,14 +10,25 @@ const props = defineProps({
 	},
 })
 
+const isLoading = ref(false)
+
 const isInTheBasket = ref(props.isInTheBasket)
 
 async function addInBasket() {
+	isLoading.value = true
 	isInTheBasket.value = !isInTheBasket.value
-	const res = await axios.get('https://dummyjson.com/products')
-	const data = res.data
 
-	console.log(data)
+	const res = await setTimeout(async () => {
+		const ress = await axios.get('https://dummyjson.com/products')
+		console.log('ress:', ress)
+		console.log('isLoading:', isLoading.value)
+
+		return ress
+	}, 2000)
+	isLoading.value = false
+	console.log('isLoading:', isLoading.value)
+
+	console.log('data:', res.data)
 }
 </script>
 

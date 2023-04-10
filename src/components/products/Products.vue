@@ -21,6 +21,7 @@ import { CardsMock } from '@/mocks/CardsMock'
 <style lang="scss" scoped>
 .products {
 	height: 100%;
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -29,7 +30,7 @@ import { CardsMock } from '@/mocks/CardsMock'
 }
 .cards {
 	display: flex;
-	flex: wrap;
+	flex-wrap: wrap;
 	gap: 2rem;
 }
 </style>
