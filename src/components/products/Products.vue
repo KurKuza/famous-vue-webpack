@@ -2,7 +2,7 @@
 import Container from '@/components/Container.vue'
 import Title from '@/components/Title.vue'
 import Card from './card/Card.vue'
-import { CardsMock } from '../../Mocks/CardsMock'
+import { CardsMock } from '@/mocks/CardsMock'
 </script>
 
 <template>
