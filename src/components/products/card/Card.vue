@@ -1,7 +1,6 @@
 <script setup>
 import { successIcon } from '@/assets/icons'
 import Button from '@/components/buttons/Button.vue'
-import IconButton from '@/components/buttons/IconButton.vue'
 import CardMessage from './CardMessage.vue'
 const props = defineProps({
 	name: {
