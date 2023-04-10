@@ -1,8 +1,8 @@
 <script setup>
 import Container from '@/components/Container.vue'
 import Title from '@/components/Title.vue'
-import Card from './Card.vue'
-import { CardsMock } from './CardsMock.ts'
+import Card from './card/Card.vue'
+import { CardsMock } from '../../Mocks/CardsMock'
 </script>
 
 <template>

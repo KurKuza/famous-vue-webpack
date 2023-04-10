@@ -42,6 +42,9 @@ const props = defineProps({
 				</div>
 				<Button buttonAccentColor2>Купить</Button>
 			</div>
+			<div v-else class="card__message">
+				<CardMessage>Продана на аукционе</CardMessage>
+			</div>
 		</div>
 	</div>
 </template>
@@ -51,12 +54,17 @@ const props = defineProps({
 	display: flex;
 	flex-direction: column;
 	border: 0.0625rem solid var(--dividerColor);
-	max-width: 278px;
+	width: 17.375rem;
+	height: 20.5rem;
+
 	&--isBought {
 		opacity: 0.5;
 	}
 	&__content {
+		display: flex;
+		flex-direction: column;
 		padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+		gap: 1.375rem;
 	}
 	&__img {
 		width: 100%;
@@ -67,14 +75,13 @@ const props = defineProps({
 		font-size: 1.125rem;
 		line-height: 150%;
 		text-align: left;
-		margin-bottom: 1.375rem;
 	}
 	&__bottom-content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.card__price {
+	&__price {
 		text-align: left;
 		&_old {
 			color: #a0a0a0;
@@ -83,6 +90,12 @@ const props = defineProps({
 			line-height: 150%;
 			text-decoration: line-through;
 		}
+	}
+	&__message {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		height: 3rem;
 	}
 }
 </style>
