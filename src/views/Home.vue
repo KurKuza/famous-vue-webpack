@@ -7,7 +7,9 @@ import Products from '@/components/products/Products.vue'
 <template>
 	<div class="page">
 		<Header />
-		<Products />
+		<main class="main">
+			<Products />
+		</main>
 		<Footer />
 	</div>
 </template>
@@ -17,6 +19,9 @@ import Products from '@/components/products/Products.vue'
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	height: 100%;
+}
+.main {
 	height: 100%;
 }
 </style>

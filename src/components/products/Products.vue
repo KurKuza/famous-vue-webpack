@@ -6,7 +6,7 @@ import { CardsMock } from '@/mocks/CardsMock'
 </script>
 
 <template>
-	<main class="products">
+	<div class="products">
 		<Container>
 			<div class="products__container">
 				<Title>Картины эпохи Возрождения</Title>
@@ -15,13 +15,11 @@ import { CardsMock } from '@/mocks/CardsMock'
 				</div>
 			</div>
 		</Container>
-	</main>
+	</div>
 </template>
 
 <style lang="scss" scoped>
 .products {
-	height: 100%;
-
 	&__container {
 		display: flex;
 		flex-direction: column;
