@@ -41,6 +41,7 @@ button,
 textarea {
 	font-family: 'Montserrat';
 	font-size: inherit;
+	outline: none;
 }
 
 input::-ms-clear {
