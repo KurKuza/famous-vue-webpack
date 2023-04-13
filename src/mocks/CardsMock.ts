@@ -1,6 +1,7 @@
 import CardsMockJson from './CardsMockJson.json'
 
-type CardType = {
+export type CardType = {
+	id: number
 	name: string
 	img: any
 	price: number
@@ -9,4 +10,4 @@ type CardType = {
 	isBought: boolean
 }
 
-export const CardsMock: CardType[] = CardsMockJson
+export const cardsMock: CardType[] = CardsMockJson

@@ -1,8 +1,18 @@
 <script setup>
+import { ref } from 'vue'
+
 import Container from '@/components/Container.vue'
 import Title from '@/components/Title.vue'
 import Card from './card/Card.vue'
-import { CardsMock } from '@/mocks/CardsMock'
+import { cardsMock } from '@/mocks/CardsMock'
+import {
+	LocalStorageKeys,
+	getValueFromLocalStorage,
+} from '@/utils/localStorage'
+
+const cards = ref(
+	getValueFromLocalStorage(LocalStorageKeys.CardsMock) || cardsMock
+)
 </script>
 
 <template>
@@ -11,7 +21,7 @@ import { CardsMock } from '@/mocks/CardsMock'
 			<div class="products__container">
 				<Title>Картины эпохи Возрождения</Title>
 				<div class="cards">
-					<Card v-for="card in CardsMock" v-bind="card" />
+					<Card v-for="card in cards" v-bind="card" />
 				</div>
 			</div>
 		</Container>
@@ -24,6 +34,7 @@ import { CardsMock } from '@/mocks/CardsMock'
 		display: flex;
 		flex-direction: column;
 		padding-top: 2.8125rem;
+		width: 100%;
 	}
 }
 .cards {

@@ -3,6 +3,10 @@ import Button from '@/components/buttons/Button.vue'
 import CardMessage from './CardMessage.vue'
 import CardButton from './CardButton.vue'
 const props = defineProps({
+	id: {
+		type: Number,
+		required: true,
+	},
 	name: {
 		type: String,
 		required: true,
@@ -45,7 +49,7 @@ const props = defineProps({
 					</div>
 					<div>{{ props.price.toLocaleString('ru-RU') }}$</div>
 				</div>
-				<CardButton :isInTheBasket="isInTheBasket" />
+				<CardButton :isInTheBasket="isInTheBasket" :id="id" />
 			</div>
 		</div>
 	</div>
