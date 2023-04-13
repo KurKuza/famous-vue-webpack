@@ -1,5 +1,5 @@
 # famous-vue-webpack
-A simple project that demonstrates how to use Famous Engine with Vue.js and Webpack.
+A simple project that demonstrates how to use Famous with Vue.js and Webpack.
 ## Getting Started
 ### Prerequisites
 Make sure you have Node.js and npm installed on your machine. You can download them from [here](https://nodejs.org/en/download/).
