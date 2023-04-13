@@ -1,7 +1,7 @@
 [
 	{
 		"name": "«Рождение Венеры» Сандро Боттичелли",
-		"img": "https://raw.githubusercontent.com/KurKuza/famous-vue-webpack/master/src/assets/products/images/TheBirthofVenusbySandroBotticelli.png",
+		"img": "https://raw.githubusercontent.com/KurKuza/famous-vue-webpack/master/src/assets/images/TheBirthofVenusbySandroBotticelli.png",
 		"price": 1000000,
 		"oldPrice": 2000000,
 		"isInTheBasket": false,
@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "«Тайная вечеря»  Леонардо да Винчи",
-		"img": "https://raw.githubusercontent.com/KurKuza/famous-vue-webpack/master/src/assets/products/images/TheLastSupperbyLeonardodaVinci.png",
+		"img": "https://raw.githubusercontent.com/KurKuza/famous-vue-webpack/master/src/assets/images/TheLastSupperbyLeonardodaVinci.png",
 		"price": 3000000,
 		"oldPrice": null,
 		"isInTheBasket": false,
@@ -17,7 +17,7 @@
 	},
 	{
 		"name": "«Сотворение Адама» Микеланджело",
-		"img": "https://raw.githubusercontent.com/KurKuza/famous-vue-webpack/master/src/assets/products/images/TheCreationofAdambyMichelangelo.png",
+		"img": "https://raw.githubusercontent.com/KurKuza/famous-vue-webpack/master/src/assets/images/TheCreationofAdambyMichelangelo.png",
 		"price": 5000000,
 		"oldPrice": 6000000,
 		"isInTheBasket": true,
@@ -25,7 +25,7 @@
 	},
 	{
 		"name": "«Урок анатомии»  Рембрандт",
-		"img": "https://raw.githubusercontent.com/KurKuza/famous-vue-webpack/master/src/assets/products/images/AnatomyLessonbyRembrandt.png",
+		"img": "https://raw.githubusercontent.com/KurKuza/famous-vue-webpack/master/src/assets/images/AnatomyLessonbyRembrandt.png",
 		"price": 5000000,
 		"oldPrice": null,
 		"isInTheBasket": true,
