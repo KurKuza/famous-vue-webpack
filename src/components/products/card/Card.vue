@@ -56,10 +56,12 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
+@import '@/styles/variables.scss';
+
 .card {
 	display: flex;
 	flex-direction: column;
-	border: 0.0625rem solid var(--dividerColor);
+	border: 0.0625rem solid $dividerColor;
 	width: 17.25rem;
 	height: 20.5rem;
 

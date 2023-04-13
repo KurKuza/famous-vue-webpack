@@ -5,9 +5,11 @@
 </template>
 
 <style lang="scss">
+@import '@/styles/variables.scss';
+
 .card-message {
 	font-weight: 700;
 	font-size: 1rem;
-	color: var(--textColor);
+	color: $textColor;
 }
 </style>

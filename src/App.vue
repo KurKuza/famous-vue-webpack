@@ -1,6 +1,5 @@
 <script setup>
-import './null.css'
-import './main.css'
+import './main.scss'
 import Container from '@/components/Container.vue'
 import Home from '@/views/Home.vue'
 </script>

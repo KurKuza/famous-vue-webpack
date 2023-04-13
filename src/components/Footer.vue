@@ -32,13 +32,15 @@ import Search from '@/components/Search.vue'
 </template>
 
 <style lang="scss">
+@import '@/styles/variables.scss';
+
 .footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	height: 5.9375rem;
-	background-color: var(--footerColor);
+	background-color: $footerColor;
 	&__container {
 		justify-content: space-between;
 	}

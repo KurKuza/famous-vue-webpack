@@ -30,6 +30,8 @@ const props = defineProps({
 </template>
 
 <style lang="scss" scoped>
+@import '@/styles/variables.scss';
+
 .button {
 	display: flex;
 	justify-content: center;
@@ -55,13 +57,13 @@ const props = defineProps({
 	}
 
 	&__accent_1 {
-		background-color: var(--accentColor1);
+		background-color: $accentColor1;
 	}
 	&__accent_2 {
-		background-color: var(--accentColor2);
+		background-color: $accentColor2;
 	}
 	&__accent_3 {
-		background-color: var(--accentColor3);
+		background-color: $accentColor3;
 	}
 }
 </style>

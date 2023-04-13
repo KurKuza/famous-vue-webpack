@@ -18,13 +18,15 @@ import Search from '@/components/Search.vue'
 </template>
 
 <style lang="scss">
+@import '@/styles/variables.scss';
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	height: 5.9375rem;
-	border-bottom: 0.0625rem solid var(--dividerColor);
+	border-bottom: 0.0625rem solid $dividerColor;
 	&__container {
 		justify-content: space-between;
 	}

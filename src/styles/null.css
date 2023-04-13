@@ -62,7 +62,6 @@ button::-moz-focus-inner {
 a,
 a:visited {
 	text-decoration: none;
-	font-size: 0.875rem;
 }
 
 a:hover {
