@@ -14,14 +14,16 @@ import Products from '@/components/products/Products.vue'
 	</div>
 </template>
 
-<style>
+<style lang="scss">
 .page {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100%;
-}
-.main {
-	height: 100%;
+	min-height: 100%;
+
+	.main {
+		height: 100%;
+		margin-bottom: auto;
+	}
 }
 </style>
