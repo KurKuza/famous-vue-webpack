@@ -5,13 +5,20 @@ import Container from '@/components/Container.vue'
 import Title from '@/components/Title.vue'
 import Card from './card/Card.vue'
 import { cardsMock } from '@/mocks/CardsMock'
+import { isEmpty } from '@/utils/checks'
 import {
 	LocalStorageKeys,
 	getValueFromLocalStorage,
 } from '@/utils/localStorage'
 
+const isEmptyLocalCards = isEmpty(
+	getValueFromLocalStorage(LocalStorageKeys.CardsMock)
+)
+
 const cards = ref(
-	getValueFromLocalStorage(LocalStorageKeys.CardsMock) || cardsMock
+	isEmptyLocalCards
+		? cardsMock
+		: getValueFromLocalStorage(LocalStorageKeys.CardsMock)
 )
 </script>
 
